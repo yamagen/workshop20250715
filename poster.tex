@@ -2,7 +2,7 @@
 \ENGtrue % 英語版を使用する場合はtrue、和文版を使用する場合はfalseに設定
 
 \documentclass{article}
-\usepackage[paperwidth=84.1cm, paperheight=118.9cm, margin=0cm]{geometry}
+\usepackage[paperwidth=128.0cm, paperheight=72.0cm, margin=0cm]{geometry}
 \usepackage{tikz}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -60,119 +60,108 @@
 \node[
   anchor=south west,
   inner sep=0,
-  opacity=0.2, % 透明度を設定
+  opacity=0.8, % 透明度を設定
 ] at (current page.south west) {
-  \includegraphics[width=\paperwidth,height=\paperheight]{
+  \includegraphics[height=\paperheight]{
 %  ise-katano.jpg
-    images/yatsuhashi.jpg
-}
+    images/githubicon01.png
+  }
 };
 
-% 画像の著作権
-\node[
-  anchor=north west,
-  align=left,
-  color=katanoMediumPurple,
-  font=\fontsize{20pt}{20pt}\bfseries
-] at ([xshift=1cm,yshift=2cm]current page.south west) {
-\ifENG
-% Background: Katano; Admiring the Scattered Cherry Blossoms
-Background Image courtesy of the Museum of Fine Arts, Boston; Public Domain
-%  \jpfont{画像提供：\textbf{いせかたの}（伊勢物語のカタノ）}
-\else
-画像出典：ボストン美術館（パブリックドメイン）
-\fi
-};
+% % 画像の著作権
+% \node[
+%   anchor=north west,
+%   align=left,
+%   color=katanoMediumPurple,
+%   font=\fontsize{20pt}{20pt}\bfseries
+% ] at ([xshift=1cm,yshift=2cm]current page.south west) {
+% \ifENG
+% % Background: Katano; Admiring the Scattered Cherry Blossoms
+% Background Image courtesy of the Museum of Fine Arts, Boston; Public Domain
+% %  \jpfont{画像提供：\textbf{いせかたの}（伊勢物語のカタノ）}
+% \else
+% 画像出典：ボストン美術館（パブリックドメイン）
+% \fi
+% };
 
-% Title
-\node[
-  anchor=north,
-  align=center,
-  text=blue!80!black,
-  font=\fontsize{60pt}{70pt}\bfseries
-] at ([yshift=-2cm]current page.north) {
-  Translating Ise Monogatari through the Lens of Process Grammar Model
-};
+% % Title
+% \node[
+%   anchor=north,
+%   align=center,
+%   text=blue!80!black,
+%   font=\fontsize{60pt}{70pt}\bfseries
+% ] at ([yshift=-2cm]current page.north) {
+%   Translating Ise Monogatari through the Lens of Process Grammar Model
+% };
 
-% Subtitle
-\node[
-  anchor=north,
-  align=center,
-  text=blue!80!black,
-  font=\fontsize{60pt}{70pt}\bfseries
-] at ([yshift=-5cm]current page.north) {
-  A Bilingual and Structured Approach to Classical Japanese Narratives
-};
+%% Subtitle
+%\node[
+%  anchor=north,
+%  align=center,
+%  text=blue!80!black,
+%  font=\fontsize{60pt}{70pt}\bfseries
+%] at ([yshift=-5cm]current page.north) {
+%  A Bilingual and Structured Approach to Classical Japanese Narratives
+%};
 
-% Authors
-\node[
-  anchor=north,
-  align=center,
-  font=\fontsize{50pt}{40pt}\bfseries
-] at ([yshift=-8cm]current page.north) {
-Hilofumi Yamamoto{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-\quad
-Bor Hodošček{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
-\quad
-Xudong Chen{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-};
+%% Authors
+%\node[
+%  anchor=north,
+%  align=center,
+%  font=\fontsize{50pt}{40pt}\bfseries
+%] at ([yshift=-8cm]current page.north) {
+%Hilofumi Yamamoto{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
+%\quad
+%Bor Hodošček{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
+%\quad
+%Xudong Chen{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
+%};
 
-% 所属
-\node[
-  anchor=north,
-  align=center,
-  font=\fontsize{40pt}{30pt}\bfseries
-] at ([yshift=-11cm]current page.north) {
-{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-Institute of Science Tokyo
-\quad
-{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
-The University of Osaka
-};
+% % 所属
+% \node[
+%   anchor=north,
+%   align=center,
+%   font=\fontsize{40pt}{30pt}\bfseries
+% ] at ([yshift=-11cm]current page.north) {
+% {\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
+% Institute of Science Tokyo
+% \quad
+% {\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
+% The University of Osaka
+% };
 
-% 左上テキストボックス
-\node[
-  draw=katanoBlue,
-  line width=3pt,
-  inner sep=10mm, 
-  anchor=north west,
-  text width=35cm,
-  align=left,
-  text=mydeepblue,
-  font=\fontsize{30pt}{20pt}\bfseries
-] at ([xshift=4cm,yshift=-15cm]current page.north west) {
-  \textbf{\fontsize{40pt}{30pt}\selectfont Background}\\[1em]
-  \textcolor{katanoBrown}{This section describes the background of the research...}
-};
+% % 左上テキストボックス
+% \node[
+%   draw=katanoBlue,
+%   line width=3pt,
+%   inner sep=10mm, 
+%   anchor=north west,
+%   text width=35cm,
+%   align=left,
+%   text=mydeepblue,
+%   font=\fontsize{30pt}{20pt}\bfseries
+% ] at ([xshift=4cm,yshift=-15cm]current page.north west) {
+%   \textbf{\fontsize{40pt}{30pt}\selectfont Background}\\[1em]
+%   \textcolor{katanoBrown}{This section describes the background of the research...}
+% };
 
 % 右上テキストボックス
 \node[
   draw=katanoBlue,
-  line width=3pt,
+  line width=6pt,
   inner sep=10mm, 
   anchor=north east,
-  text width=35cm,
+  text width=50cm,
   align=left,
   text=mydeepblue,
-  font=\fontsize{30pt}{20pt}\bfseries
+  font=\fontsize{40pt}{40pt}\bfseries
 ] at ([xshift=-3cm,yshift=-15cm]current page.north east) {
-  \textbf{\fontsize{40pt}{30pt}\selectfont Methods}\\[1em]
-  \textcolor{katanoBrown}{Here you explain your methods in detail...}
-};
-
-% 中央下テキスト
-\node[
-  draw=katanoBlue,
-  line width=3pt,
-  inner sep=10mm, 
-  anchor=north west,
-  text width=75cm,
-  align=left,
-  text=mydeepblue,
-  font=\fontsize{30pt}{20pt}\bfseries
-] at ([xshift=4cm, yshift=-40cm]current page.north west) {
-  \textbf{\fontsize{40pt}{30pt}\selectfont Results and Conclusion}\\[1em]
-  \textcolor{katanoBrown}{Summarize the results and main findings here...}
+  \textbf{\fontsize{70pt}{70pt}\selectfont 
+  Hilofumi Yamamoto, Ph.D. in Linguistics} \\[1em]
+  \begin{flushright}
+  The Australian National University\\[1em]
+  \textcolor{mydeepblue}{If you want to know about me, scan the following QR code.}
+  \end{flushright}
 };
 
 
@@ -181,12 +170,12 @@ The University of Osaka
   draw=katanoBlue,
   line width=3pt,
   inner sep=10mm, 
-  anchor=north west,
+  anchor=south east,
   text width=75cm,
   align=left,
   text=mydeepblue,
   font=\fontsize{30pt}{20pt}\bfseries
-] at ([xshift=4cm, yshift=-80cm]current page.north west) {
+] at ([xshift=0cm, yshift=0cm]current page.south east) {
   \textbf{\fontsize{40pt}{30pt}\selectfont References}\\[1em]
   - Yamamoto, H. (2025). Process Grammar Model (v1.0.11). Zenodo. 
   \href{https://doi.org/10.5281/zenodo.15613134}{
@@ -202,8 +191,8 @@ The University of Osaka
 \node[
   anchor=south east
 ] at ([xshift=-1cm,yshift=1cm]current page.south east) {
-  \includegraphics[height=4cm]{images/sciencetokyo.png}
-  \includegraphics[trim=30 30 30 30, clip, height=4cm]{images/theUnivOsaka.jpg}
+  \includegraphics[height=8cm]{images/sciencetokyo.png}
+%  \includegraphics[trim=30 30 30 30, clip, height=4cm]{images/theUnivOsaka.jpg}
 };
 
 \end{tikzpicture}
