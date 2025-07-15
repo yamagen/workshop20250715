@@ -61,138 +61,76 @@
   anchor=south west,
   inner sep=0,
   opacity=0.8, % 透明度を設定
-] at (current page.south west) {
-  \includegraphics[height=\paperheight]{
-%  ise-katano.jpg
-    images/githubicon01.png
-  }
+] at ([xshift=3cm,yshift=8cm]current page.south west) {
+  \includegraphics[height=50cm]{images/githubicon01.png}
 };
 
-% % 画像の著作権
-% \node[
-%   anchor=north west,
-%   align=left,
-%   color=katanoMediumPurple,
-%   font=\fontsize{20pt}{20pt}\bfseries
-% ] at ([xshift=1cm,yshift=2cm]current page.south west) {
-% \ifENG
-% % Background: Katano; Admiring the Scattered Cherry Blossoms
-% Background Image courtesy of the Museum of Fine Arts, Boston; Public Domain
-% %  \jpfont{画像提供：\textbf{いせかたの}（伊勢物語のカタノ）}
-% \else
-% 画像出典：ボストン美術館（パブリックドメイン）
-% \fi
-% };
 
-% % Title
-% \node[
-%   anchor=north,
-%   align=center,
-%   text=blue!80!black,
-%   font=\fontsize{60pt}{70pt}\bfseries
-% ] at ([yshift=-2cm]current page.north) {
-%   Translating Ise Monogatari through the Lens of Process Grammar Model
-% };
-
-%% Subtitle
-%\node[
-%  anchor=north,
-%  align=center,
-%  text=blue!80!black,
-%  font=\fontsize{60pt}{70pt}\bfseries
-%] at ([yshift=-5cm]current page.north) {
-%  A Bilingual and Structured Approach to Classical Japanese Narratives
-%};
-
-%% Authors
-%\node[
-%  anchor=north,
-%  align=center,
-%  font=\fontsize{50pt}{40pt}\bfseries
-%] at ([yshift=-8cm]current page.north) {
-%Hilofumi Yamamoto{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-%\quad
-%Bor Hodošček{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
-%\quad
-%Xudong Chen{\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-%};
-
-% % 所属
-% \node[
-%   anchor=north,
-%   align=center,
-%   font=\fontsize{40pt}{30pt}\bfseries
-% ] at ([yshift=-11cm]current page.north) {
-% {\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 1}}
-% Institute of Science Tokyo
-% \quad
-% {\raisebox{1.5ex}{\fontsize{20pt}{20pt}\selectfont 2}}
-% The University of Osaka
-% };
-
-% % 左上テキストボックス
-% \node[
-%   draw=katanoBlue,
-%   line width=3pt,
-%   inner sep=10mm, 
-%   anchor=north west,
-%   text width=35cm,
-%   align=left,
-%   text=mydeepblue,
-%   font=\fontsize{30pt}{20pt}\bfseries
-% ] at ([xshift=4cm,yshift=-15cm]current page.north west) {
-%   \textbf{\fontsize{40pt}{30pt}\selectfont Background}\\[1em]
-%   \textcolor{katanoBrown}{This section describes the background of the research...}
-% };
 
 % 右上テキストボックス
 \node[
-  draw=katanoBlue,
-  line width=6pt,
+%  draw=katanoBlue,
+%  line width=6pt,
   inner sep=10mm, 
   anchor=north east,
-  text width=50cm,
+  text width=64cm,
   align=left,
   text=mydeepblue,
-  font=\fontsize{40pt}{40pt}\bfseries
-] at ([xshift=-3cm,yshift=-15cm]current page.north east) {
-  \textbf{\fontsize{70pt}{70pt}\selectfont 
-  Hilofumi Yamamoto, Ph.D. in Linguistics} \\[1em]
+  font=\fontsize{50pt}{40pt}\bfseries
+] at ([xshift=-5cm,yshift=-5cm]current page.north east) {
+  \textbf{\fontsize{90pt}{70pt}\selectfont 
+  Hilofumi Yamamoto, Ph.D. in Linguistics} \\[.3em]
   \begin{flushright}
-  The Australian National University\\[1em]
+  The Australian National University\\[.3em]
   \textcolor{mydeepblue}{If you want to know about me, scan the following QR code.}
   \end{flushright}
 };
 
 
-% 中央下右テキスト
+% 右上テキストボックス
 \node[
-  draw=katanoBlue,
-  line width=3pt,
+%  draw=katanoBlue,
+%  line width=6pt,
   inner sep=10mm, 
-  anchor=south east,
-  text width=75cm,
+  anchor=north west,
+  text width=65cm,
   align=left,
   text=mydeepblue,
-  font=\fontsize{30pt}{20pt}\bfseries
-] at ([xshift=0cm, yshift=0cm]current page.south east) {
-  \textbf{\fontsize{40pt}{30pt}\selectfont References}\\[1em]
-  - Yamamoto, H. (2025). Process Grammar Model (v1.0.11). Zenodo. 
-  \href{https://doi.org/10.5281/zenodo.15613134}{
-    \texttt{https://doi.org/10.5281/zenodo.15613134}
-    \includegraphics[height=0.9cm]{images/zenodo.15613134.png}
-  }
-
+  font=\fontsize{70pt}{70pt}\bfseries
+] at ([xshift=-70cm,yshift=-16cm]current page.north east) {
+  \begin{enumerate}
+    \itemsep=.7em
+    \item Wittgenstein: Language is use.\\
+    \textbf{\fontsize{50pt}{60pt}\selectfont in Philosophical Investigations (1953)} 
+    \item Grammars: In almost all languages, \\
+      \hspace{8em} word order is relatively ... 
+    \item Mistakes: Almost all people do not care about ...
+    \item Preparations: Prepare the ... rather than the ...
+    \item Pretend: Pretend that you understand very well.
+    \item Purpose of language: ???
+    \item Tips: Talk to ... in your mind.
+  \end{enumerate}
 };
-
-
 
 % ロゴ（右下）
 \node[
   anchor=south east
-] at ([xshift=-1cm,yshift=1cm]current page.south east) {
-  \includegraphics[height=8cm]{images/sciencetokyo.png}
-%  \includegraphics[trim=30 30 30 30, clip, height=4cm]{images/theUnivOsaka.jpg}
+] at ([xshift=-20cm,yshift=4cm]current page.south east) {
+\includegraphics[height=10cm]{images/sciencetokyo.png}
+};
+
+% QRコード（左下）
+\node[
+  anchor=south east
+] at ([xshift=-1cm,yshift=-1cm]current page.south east) {
+  \includegraphics[height=20cm]{images/qr20250715111608434.png}
+};
+
+% QRコード（左下）
+\node[
+  anchor=south east
+] at ([xshift=-45cm,yshift=1cm]current page.south east) {
+  \includegraphics[height=17cm]{images/qr20250715120047363.png}
 };
 
 \end{tikzpicture}
